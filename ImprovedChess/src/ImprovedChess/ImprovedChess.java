@@ -5,7 +5,7 @@ import java.util.Scanner;
 /**
  * Class Assignment
  *
- * @topic Multiple Dimension Array
+ * @topic Multidimensional Array
  * @name Simple Chess Game
  * @date 03192015
  * @author Chohee Kim
