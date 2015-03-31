@@ -3,9 +3,8 @@ package simplechess;
 import java.util.Scanner;
 
 /**
- * Class Assignment
- * 
-* @topic Multidimensional Array
+ * Class Assignment 
+ * @topic Multidimensional Array
  * @name Simple Chess Game
  * @date 03202015
  * @author Chohee Kim
