@@ -71,17 +71,17 @@ public class ElevatorMethod {
 
     public static void changeFloor(int destinationF) {
         //initialize the moving elevator to destination floor
-        switch (movingF) {
-            case 1:
+        switch (movingE) {
+            case "Elevator 1":
                 E1 = destinationF;
                 break;
-            case 3:
+            case "Elevator 2":
                 E2 = destinationF;
                 break;
-            case 5:
+            case "Elevator 3":
                 E3 = destinationF;
                 break;
-            case 9:
+            case "Elevator 4":
                 E4 = destinationF;
                 break;
         }

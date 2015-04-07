@@ -23,24 +23,24 @@ public class ATMMethod {
         System.out.println("*Transaction typyes* \nc. Check balance \nd. Deposit \nw. Withdrawal");        
     }
     
-    public static void checkingBalance(String opr) {  
+    public static int checkingBalance(String opr) {  
         //Display the current balance of the appropriate account.
         if(opr.equals("S") || opr.equals("s")) {
-            System.out.printf("Current Saving Balance : $%d \n",saving);
+            return saving;
         }else{
-            System.out.printf("Current Checking Balance : $%d \n",checking);
+            return checking;
         }
     }
     
-    public static void deposit(String opr){
+    public static int deposit(String opr){
         //ask the user for the amount to deposit and display updated the balance.
         System.out.println("How much would you like to deposit? ");
         int depositM = input.nextInt();
         
         if(opr.equals("S") || opr.equals("s")) {
-            System.out.printf("Updated Saving Account : $%d \n",saving + depositM);
+            return saving + depositM;
         }else {
-            System.out.printf("Updated Checking Account : $%d \n",checking + depositM);
+            return checking + depositM;
         }        
     }
     
@@ -80,10 +80,10 @@ public class ATMMethod {
         switch(transaction) {
             
             case "c" :
-                checkingBalance(operate);
+                System.out.printf("Current Balance : $%d \n",checkingBalance(operate));
                 break;
             case "d" :
-                deposit(operate);
+                System.out.printf("Updated Account : $%d \n",deposit(operate));
                 break;
             case "w" :
                 withdraw(operate);
