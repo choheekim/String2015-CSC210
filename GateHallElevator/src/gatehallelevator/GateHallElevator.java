@@ -14,9 +14,10 @@ import java.util.Scanner;
  * Class Assignment
  * @topic Loop
  * @name Elevator. Assignment #6
- * @datek 03022015
+ * @date 03022015
  * @author Chohee Kim
  */
+
 public class GateHallElevator {
 
     public static void main(String[] args) {
